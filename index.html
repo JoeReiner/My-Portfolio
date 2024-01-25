@@ -1,72 +1,114 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Basics</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        div {
-            background-color: violet;
-        }
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>This is my 2nd website</title>
+    </head>
+    <body>
+        Hello world!
+        <h1>This is a header - 1</h1>
+        <h2>This is a header - 2</h2>
+        <h3>This is a header - 3</h3>
+        <h4>This is a header - 4</h4>
+        <h5>This is a header - 5</h5>
+        <h6>This is a header - 6</h6>
 
-    </style>
-</head>
-<body>
-    <h1>Welcome to my website!</h1>
-    <p>This is a warm-up activity.</p>
+        <h2>This is sample header</h2>
+        <p>lorem ipsom </p>
+        <br>
+        <br>
 
-    <h2>3 ways to include CSS styles</h2>
-    <h3>Inline Style</h3>
-    <p style="background-color: pink">This paragraph is styled using inline style.</p>
+        <h2>Text formating</h2>
+        <p>This is <strong>important</strong> text.</p>
+        <p>This is <em>emphasized.</em></p>
+        <p>This text is <u>underlined.</u></p>
+        <p>This <s>task</s> is already done.</p>
+        <p>H<sub>2</sub>0 - Number '2' is sub</p>
+        <p>1<sup>st</sup>  -  'st' is a sup</p>
 
-    <h3>Interlnal CSS</h3>
-    <div>This div is styled using internal CSS.</div>
+        <h2>Unordered List, Ordered List, Definition List</h2>
+        <h3>Unordered List</h3>
+        <ul>
+            <li>Banana</li>
+            <li>Apple</li>
+            <li>Orange</li>
+        </ul>
 
-    <h3>External CSS</h3>
-    <span>This span is styled using external CSS.</span>
+        <h3>Ordered List</h3>
+        <ol>
+            <li>Breakfast</li>
+            <li>Lunch</li>
+            <li>Dinner</li>
+        </ol>
 
-    <h2>CSS Selectors</h2>
-    <ul>
-        <li>This is selected using element selectors.</li>
-        <li class="listClass">This is selected using class selector.</li>
-        <li class="listClass">This is selected using class selector.</li>
-        <li id="listId">This is selected using id selector.</li>
-        <li value="list">This is selected using attribute selector.</li>
-        <li class="listClass1">This is selected using group selector</li>
-        <li class="listClass2">This is selected using group selector</li>
-        <li class="descendant">This is selected using descendant selector</li>
-    </ul>
+        <h3>Definition List</h3>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Hypertext Markup Language</dd>
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets</dd>
+            <dt>JS</dt>
+            <dd>JavaScript</dd>
+        </dl>
 
-    <p class="descendant"> This is not a child of ul.</p>
+        <h2>Anchor</h2>
+        <a href="www.google.com">Google</a>
 
-    <h2>Pseudo Classes</h2>
-    <h3>Hover and Active Psuedo Class</h3>
-    <p>Hover over the button to change color</p>
-    <p>Click button to change color</p>
-    <button class="hoverBtn activeBtn">Hover over me or Click me</button>
+        <br>
+        <br>
 
-    <h3>Focus Pseudo Class</h3>
-    <p>Click on input field to focus</p>
-    <input type="text" class="focusInput">
+        <h2>HTML Form</h2>
+        <form>
+            <label for="name">Name:</Label>
+            <input type="text" name="name" required> 
+            <br>
 
-    <h3>Visited Pseudo Class</h3>
-    <a href="https://theuselessweb.com/" class="visitedLink">Visit me!</a>
+            <label for="email">Email:</label>
+            <input type="email" name="email" required>
+            <br>
 
-    <h2>Pseudo Elements</h2>
-    <p class="bigLetter"> The first letter of this paragraph is bigger than the rest of the text.</p>
-    <p class="line1">The first line of this paragraph is color blue. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab aspernatur reiciendis possimus autem, earum aliquid doloremque delectus a harum commodi aperiam dolorum amet, id veritatis non ut adipisci quo similique debitis deserunt natus inventore! Veniam minus earum nulla ipsa, voluptatibus obcaecati placeat rerum ex sunt, a corrupti voluptas eaque ab!</p>
+            <label for="phone">Number:</label>
+            <input type="number" name="phone">
+            <br>
 
-    <p class="beforeAndAfter">Add some content before and after his paragraph.</p>
+            <label for="password">Password:</label>
+            <input type="password" namne="password">
+            <br>
 
-    <p class="selectParts">Select a part of this paragraph. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem incidunt cupiditate, officiis voluptatem saepe neque eius exercitationem inventore necessitatibus vitae sunt tenetur at quo aspernatur esse nostrum alias harum. Voluptatibus.</p>
+            <label for="message">Message:</label>
+            <textarea name="message" rows="4" cols="50"></textarea>
+            <br>
 
-    <p class="cascade">Select a part of this paragraph. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem incidunt cupiditate, officiis voluptatem saepe neque eius exercitationem inventore necessitatibus vitae sunt tenetur at quo aspernatur esse nostrum alias harum. Voluptatibus.</p>
+            <label for="OS">Operating System</label>
+            <select name="OS">
+                <option value="windows">Windows</option>
+                <option value="mac">Mac</option>
+                <option value="linux">Linux</option>
+            </select>
+            <br>
 
+            <input type="radio" name="options" value="option1">
+            <label for="option1">Option 1</label>
+            <input type="radio" name="options" value="option2">
+            <label for="option2">Option 2</label>
 
+            <input type="radio" name="differentOption" value="option3">
+            <label for="option3">Option 3/label>
 
-    <br><br><br><br><br><br>
-    <br><br><br><br><br><br>
-    <br><br><br><br><br><br>
+            <br>
+            
+            <input type="checkbox" name="pink" value="pink">
+            <label for="pink">Pink</label>
+            <input type="checkbox" name="blue" value="blue">
+            <label for="blue">Blue</label>
+            <input type="checkbox" name="green" value="green">
+            <label for="green">Green</label>
+            <input type="checkbox" name="purple" value="purple">
+            <label for="purple">Purple</label>
+            <input type="checkbox" name="red pink" value="red pink">
+            <label for="red pink">Red Pink</label>
 
-</body>
+        </form>
+
+    </body>
 </html>
