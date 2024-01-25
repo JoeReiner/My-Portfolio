@@ -1,0 +1,30 @@
+.font-family-size-bold-center-align {
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 4px rgb(15, 15, 54);
+    text-decoration: underline;
+    font: italic;
+
+}
+
+.italic-underline {
+    text-decoration: underline;
+    font: italic;
+    font-weight: bold;
+
+}
+
+.letter-spacing {
+    letter-spacing: 10px;
+
+}
+
+.centerAlignLineThrough {
+    text-decoration: line-through;
+    text-align: center;
+
+}
